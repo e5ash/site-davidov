@@ -18,7 +18,8 @@ var gulp       = require('gulp'),
 gulp.task('sprite', function () {
 	var spriteData = gulp.src('src/template/img/icons/*.png').pipe(spritesmith({
 		imgName: 'sprite.png',
-		cssName: 'sprite.sass'
+		cssName: 'sprite.sass',
+		padding: 5
 	}));
 	return spriteData.pipe(gulp.dest('src/template/sprite/'));
 });
@@ -44,7 +45,9 @@ gulp.task('scripts', function() {
 	return gulp.src([ 
 		'src/template/libs/jquery/dist/jquery.js',
 		'src/template/libs/jquery-mask-plugin/dist/jquery.mask.js',
-		'src/template/libs/fancybox/dist/jquery.fancybox.js'
+		'src/template/libs/fancybox/dist/jquery.fancybox.js',
+		'src/template/libs/slick-carousel/slick/slick.js',
+		'src/template/libs/jquery.form-styler/dist/jquery.formstyler.js'
 		])
 		.pipe(concat('libs.js')) 
 		.pipe(gulp.dest('src/template/scripts')); 
