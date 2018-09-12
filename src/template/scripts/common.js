@@ -7,7 +7,8 @@ $(document).ready(function($) {
 		arrows: false,
 		dots: true,
 		appendDots: $('.slider__dots'),
-		fade: true
+		fade: true,
+		autoplay: 5000
 	})
 
 
@@ -144,11 +145,19 @@ $(document).ready(function($) {
 
 	$(window).on('load resize', function(event) {
 		var windowWidth = $(window).width();
-		if (windowWidth < 767) {
+		if (windowWidth < 751) {
+			// advantages.slick('reinit');
+			// certificates.slick('reinit');
+			// production.slick('reinit');
+			// other.slick('reinit');
 			nav.height(mainWrap.height() - 200);
 			$('.nav__drop-list li ul').height(mainWrap.height() - 200);
 		} else {
-			nav.removeAttr('style');
+			// advantages.slick('reinit');
+			// certificates.slick('reinit');
+			// production.slick('reinit');
+			// other.slick('reinit');
+			// nav.removeAttr('style');
 			$('.nav__drop-list li ul').removeAttr('style');
 		}
 	});

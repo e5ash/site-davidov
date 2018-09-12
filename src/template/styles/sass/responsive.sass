@@ -23,7 +23,7 @@
 		&__wrap
 			margin-left: -205px
 
-	.title
+	h2
 		font-size: 42px
 		line-height: 48px
 	
@@ -83,14 +83,16 @@
 
 		&__text
 			ul
-				width: 100%
-				margin-top: 20px
+				width: 50%
+				// margin-top: 20px
+				align-items: flex-start
+				padding-right: 10px
 				&:first-of-type
 					margin-top: 0
 				br
 					display: none
 			li
-				margin-bottom: 20px
+				// margin-bottom: 20px
 
 	.certificates
 		&__title
@@ -127,6 +129,9 @@
 			
 
 @media screen and (max-width: 992px)
+	body
+		font-size: 16px
+
 	.case
 		width: 750px
 
@@ -145,17 +150,17 @@
 				span
 					font-size: 12px
 			&-list
-				top: 60px
+				top: 59px
 				li
-					margin-bottom: 18px
+					// margin-bottom: 18px
 					ul
 						li
 							min-height: 1px
-							margin-bottom: 5px
+							margin-bottom: 2px
 						a
-							font-size: 12px
+							font-size: 14px
 				a
-					font-size: 12px
+					font-size: 14px
 				
 		&__line
 			li
@@ -178,7 +183,7 @@
 			right: -150px
 			margin-right: 0
 
-	.title
+	h2
 		font-size: 30px
 		line-height: 38px
 
@@ -309,8 +314,48 @@
 
 	.breadcrumbs
 		margin-bottom: 30px
+
+	.advantages
+			padding-bottom: 40px
+	.about
+			padding-bottom: 35px
+	.projects
+		padding-top: 30px
+		padding-bottom: 30px
+	.get
+		padding-top: 30px
+		padding-bottom: 25px
+		&__title
+			margin-bottom: 25px
+	.certificates
+		padding-top: 30px
+		&__title
+			margin-bottom: 20px
+			br
+				display: none
+	.content
+		padding-top: 30px
+		padding-bottom: 20px
+		h2
+			margin-bottom: 20px
+	.blog
+		padding-top: 30px
+		padding-bottom: 20px
+		&__title
+			margin-bottom: 20px
 			
+	.production
+		padding-bottom: 40px
 			
+	.map
+		&__title
+			transform: translateX(-10px)
+			text-align: center
+		&__text
+			max-width: 480px
+			margin-left: auto
+			margin-right: auto
+			transform: translateX(30px)
 
 			
 @media screen and (max-width: 767px)
@@ -393,6 +438,7 @@
 					padding-left: 15px
 					padding-right: 15px
 					padding-top: 16px
+					margin-top: 12px
 					a
 						color: #fff
 						.icon, &:after
@@ -478,7 +524,7 @@
 			font-size: 14px
 			height: 34px
 
-	.title
+	h2
 		font-size: 24px
 		line-height: 30px
 	.advantages
@@ -540,10 +586,10 @@
 			order: 1
 			margin-bottom: 22px
 
-		&__title
-			font-size: 34px
-			line-height: 40px
-			margin-bottom: 20px
+	h1
+		font-size: 34px
+		line-height: 40px
+		margin-bottom: 20px
 			
 			
 			
@@ -603,7 +649,7 @@
 				&:before
 					top: 7px
 			ul
-				margin-top: 15px
+				margin-top: 0
 
 		&__video
 			width: 100%
@@ -713,7 +759,7 @@
 	.content
 		padding-top: 30px
 		padding-bottom: 20px
-		&__title
+		h2
 			margin-bottom: 20px
 
 	.text
@@ -724,10 +770,13 @@
 			&.left, &.right
 				float: none
 
-	.quote
+		h3
+			font-size: 20px
+
+	blockquote
 		padding: 24px 18px 25px 40px
 		margin-bottom: 20px
-		&__text
+		q
 			font-size: 18px
 			line-height: 26px
 			margin-bottom: 17px
@@ -735,7 +784,7 @@
 				content: ''
 				left: -30px
 				transform: scale(.7)
-		&__name
+		cite
 			font-size: 16px
 			
 	.other
@@ -1028,12 +1077,36 @@
 		font-size: 18px
 		margin-top: 25px
 
+	.get
+		ul
+			margin-top: 10px
+			width: 100%
+			&:nth-of-type(1)
+				margin-top: 0
+
+	.map
+		&__text
+			text-align: left
+			
+		&__text, &__title
+			transform: none
+
+	.panel
+		padding-top: 0
+		padding-bottom: 2px
+		&__contacts
+			padding-top: 4px
+			
+		&__messagers
+			margin-top: -6px
+			a
+				transform: scale(0.6)
 
 @media screen and (max-width: 620px)
 	.popup
 		border-radius: 5px
 		&_small
-			padding: 15px
+			padding: 25px
 			width: 95%
 
 		&__close

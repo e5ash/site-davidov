@@ -30,6 +30,12 @@
   font-style: normal; }
 
 @font-face {
+  font-family: 'Lora';
+  src: url("../../fonts/Lora/Loraitalic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
   font-family: 'Myriad Pro';
   src: url("../../fonts/MyriadPro/MyriadPro-Regular.eot");
   src: local("Myriad Pro Regular"), local("MyriadPro-Regular"), url("../../fonts/MyriadPro/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/MyriadPro/MyriadPro-Regular.woff") format("woff"), url("../../fonts/MyriadPro/MyriadPro-Regular.ttf") format("truetype");
